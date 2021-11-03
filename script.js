@@ -50,6 +50,6 @@ $cajones.forEach(cajon => {
 
 $puerta.addEventListener("click", e => {
   (puerta)
-  ? alert("Felicitaciones, lograste salir :D")
-  : alert("La puerta está cerrada, aquí al lado hay un panel, creo que debo ingresar una clave ahí")
+  ? location.href ="https://trabajocolegio.github.io/escape-room/felicitaciones.html"
+  : mostrarNota("Cerrada", "Aquí hay un panel, creo que debo ingresar una clave")
 })
