@@ -68,7 +68,7 @@ $cuadro.addEventListener("click", e => mostrarNota("Un cuadro misterioso", "Aqu�
 
 $cajones[0].addEventListener("click", e => mostrarNota("Aquí hay algo", "Aquí hay una pregunta con un número 6", true, "https://www.canva.com/design/DAEvdYuz-bs/_gM3z4d2eIqL10U3E60VOw/view?utm_content=DAEvdYuz-bs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink "))
 
-  $cajones[1].addEventListener("click", e => mostrarNota("Aquí hay algo", "Aquí hay una nota que dice que de la segunda a la cuarta letra están en otra pregunta", true, "https://trabajocolegio.github.io/escape-room/"))
+  $cajones[1].addEventListener("click", e => mostrarNota("Aquí hay algo", "Aquí hay una nota que dice que de la segunda a la cuarta letra están en otra pregunta", true, "https://www.canva.com/design/DAEvdvo8ypY/KT4bmyzpLBMQhZAXKVrNug/view?utm_content=DAEvdvo8ypY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"))
 
   $cajones[2].addEventListener("click", e => mostrarNota("Aquí hay algo", "Encontré una lista algo extraña y una nota que dice que la última parte de la clave es la respuesta a una nueva pregunta", true, "https://www.canva.com/design/DAEvdhGqbBY/8KZY1xNk7Rgf1IjE1DGEaw/view?utm_content=DAEvdhGqbBY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"))
   
