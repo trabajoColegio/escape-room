@@ -37,7 +37,7 @@ $salirPanelBtn.addEventListener("click", e => {
 /*Mostrar nota*/
 
 $ver.addEventListener("click", e => {
-  location.href = enlace
+  window.open(enlace)
 })
 
 const verPregunta = (aparecer, link)=>{
