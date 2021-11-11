@@ -160,6 +160,11 @@ img:hover {
   line-height: 150%;
 }
 
+.botones {
+  display: flex;
+  justify-content: space-around;
+}
+
 .nota button,
 .panel button {
   padding: 1rem 2rem;
@@ -177,7 +182,7 @@ img:hover {
 
 .nota button:hover,
 .panel button:hover {
-  padding: 1rem 2.5rem;
+  padding: 1.5rem 2rem;
 }
 
 .bajarOpacidad {
@@ -189,6 +194,10 @@ img:hover {
   visibility: hidden;
 }
 
+.none {
+  display: none !important;
+}
+
 .panel {
   position: fixed;
   height: 80vh;
@@ -196,7 +205,7 @@ img:hover {
   width: 70vw;
   margin-left: 15vw;
   background-color: beige;
-  z-index: 51;
+  z-index: 560;
   transition: 0.5s;
   display: flex;
   flex-direction: column;
@@ -254,4 +263,3 @@ h1 {
 .bg-black {
   background-color: black;
 }
-
