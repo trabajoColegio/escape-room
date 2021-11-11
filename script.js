@@ -1,6 +1,7 @@
 const d = document,
-$btnContinuar = d.querySelector(".nota button"),
+$btnContinuar = d.querySelector(".nota .continuar"),
 $nota = d.querySelector(".nota"),
+$ver = d.querySelector(".ver"),
 $notaTitulo = d.querySelector(".nota h2"),
 $notaParrafo = d.querySelector(".nota p"),
 $clave = d.querySelector(".clave"),
@@ -14,7 +15,8 @@ $panelBtn = d.querySelector(".panel button"),
 $panelInput = d.querySelector(".panel input"),
 $salirPanelBtn = d.querySelector(".salirPanel")
 
-let puerta = false
+let puerta = false,
+enlace= ""
 
 /*Continuar al presionar botón*/
 
@@ -34,15 +36,32 @@ $salirPanelBtn.addEventListener("click", e => {
 
 /*Mostrar nota*/
 
-const mostrarNota = (titulo, texto)  => {
+$ver.addEventListener("click", e => {
+  location.href = enlace
+})
+
+const verPregunta = (aparecer, link)=>{
+  (aparecer)
+  ? $ver.classList.remove("none")
+  : $ver.classList.add("none")
+
+  if (aparecer){
+    enlace= link
+  }
+}
+
+const mostrarNota = (titulo, texto, aparecer, link)  => {
+
   $notaTitulo.textContent = titulo
   $notaParrafo.textContent = texto
 
   $nota.classList.remove("bajarOpacidad")
     $nota.classList.remove("desaparecer")
+
+  verPregunta(aparecer, link)
 }
 
-$libro.addEventListener("click", e => mostrarNota("Una página extraña", "Acabo de encontrar un libro sobre una mesita de noche. Aquí dice que la primera letra de la clave para salir corresponde a "))
+$libro.addEventListener("click", e => mostrarNota("Una página extraña", "Acabo de encontrar un libro sobre una mesita de noche. Aquí dice que la primera letra de la clave para salir corresponde a la solución de una pregunta", true, "https://www.canva.com/design/DAEvdjHcgZw/uznXWcYw8TXBgCMbS9rfSA/view?utm_content=DAEvdjHcgZw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"))
 $florero.addEventListener("click", e => mostrarNota("Una nota en el florero", "En la habitación hay un hermoso tulipán. Quería sacarlo para llevarlo a mi casa cuando saliera, pero encontré una notita dentro del florero que decía que la tercera letra de la clave para salir de aquí era"))
 $cuadro.addEventListener("click", e => mostrarNota("Un cuadro misterioso", "Aquí hay una imagen de alguien, me suena un poco su cara"))
 
